@@ -29,7 +29,7 @@ environment — as a running capability.
           shared command world
                    │
         ┌──────────┼──────────┐
-        ▼          ▼          ▼
+        ▲          ▲          ▲
       Human     Software    AI Agent
 ```
 
