@@ -1,5 +1,7 @@
 # Yakoon
 
+<img src="../brand/png/yakoon-dark.png" width="210" alt="Yakoon">
+
 **An open-source operating environment for executable capabilities.**
 
 A pack brings capabilities into a Yakoon environment. A capability is an
