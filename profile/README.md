@@ -28,7 +28,7 @@ environment — as a running capability.
        Assembly
            │
            ▼
-       YAKOON OS
+         YAKOON
            │
            ▼
      new Capability
@@ -56,10 +56,10 @@ Each repository describes itself. From top to bottom:
 | `runtime` | The runtime and the platform model |
 | `sdk` | Build packs against Yakoon |
 | `apps` | Platform tools, including `yak` |
-| `pack-system` | Foundational OS capabilities |
-| `pack-ident` | Identity and authorization |
-| `pack-crm` | A real domain pack on Yakoon |
-| `pack-luma` | Spatial memory |
+| `pack-system` | Foundational system capabilities |
+| `pack-ident` | Identity and authorization capabilities |
+| `pack-crm` | CRM capabilities |
+| `pack-luma` | Spatial memory capabilities |
 | `pack-labs` | Experiments |
 | `launcher` | The bootstrap — `pip install yakoon` |
 | `dists` | Where built packs are distributed from |
@@ -67,8 +67,8 @@ Each repository describes itself. From top to bottom:
 ## Status
 
 Yakoon is under active development. The platform runs, packs install and
-assemble into an environment, and capabilities are usable by humans and
-AI agents today.
+assemble into environments, and their capabilities are available through
+a shared command model.
 
 > Yakoon provides infrastructure. Packs bring executable capabilities.
-> Humans, software and AI use them.
+> Humans, software and AI can use them.
