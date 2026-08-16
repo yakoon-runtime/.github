@@ -12,36 +12,71 @@ scheduling, resolution and lifecycle.
 distribution, through discovery and installation, into an assembled
 environment — as a running capability.
 
+## The model
+
 ```text
-         AUTHOR
-           │
-       builds Pack
-           │
-           ▼
-     Distribution
-           │
-           ▼
-          yak
-           │
-      Installation
-           │
-       Assembly
-           │
-           ▼
-         YAKOON
-           │
-           ▼
-     new Capability
-           │
-           ▼
-         ACTOR
-   Human · AI · Software
+                  PACKS
+                    │
+           bring capabilities
+                    │
+                    ▼
+              ┌──────────┐
+              │  YAKOON  │
+              └────┬─────┘
+                   │
+          shared command world
+                   │
+        ┌──────────┼──────────┐
+        ▼          ▼          ▼
+      Human     Software    AI Agent
 ```
 
-Capabilities are used by humans, by software and by AI agents. All of
-them are actors within the same identity and permission boundaries.
-Because commands are describable and reachable through one command
-world, AI becomes a natural actor — not a special one:
+Packs bring capabilities. Yakoon provides the infrastructure they
+shouldn't have to build themselves. Capabilities are exposed as commands
+in one shared command world.
+
+## Packs
+
+What "a pack brings capabilities" means in practice — capabilities are
+grouped by domain, not by technology:
+
+```text
+ CRM            Billing          Project       Infrastructure
+  │               │                 │                │
+  ▼               ▼                 ▼                ▼
+customer.*      invoice.*        project.*        backup.*
+contact.*       payment.*        task.*           database.*
+...             sepa.*           ...              tunnel.*
+```
+
+*`Billing`, `Project` and `Infrastructure` are illustrative examples.
+`CRM` is a real pack in this organization.*
+
+## Actors
+
+All of them are actors within the same identity and permission
+boundaries. Because commands are describable and reachable through one
+command world, AI becomes a natural actor — not a special one:
+
+```text
+                 Identity / Session
+                        │
+                        ▼
+                      Actor
+                        │
+             ┌──────────┼──────────┐
+             ▼          ▼          ▼
+           Human     Software   AI Agent
+             │          │          │
+             └──────────┼──────────┘
+                        ▼
+                     Commands
+                        │
+                Permissions / Scope
+                        │
+                        ▼
+             Resources / Capabilities
+```
 
 > **What a human can do in Yakoon, an AI agent can do as well — but no
 > more.**
