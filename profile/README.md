@@ -91,21 +91,20 @@ Each repository describes itself. From top to bottom:
 |---|---|
 | `developer` | The entry point — a ready-to-run Yakoon workspace |
 | `runtime` | The runtime and the platform model |
-| `sdk` | Build packs against Yakoon |
+| `sdk` | Build components against Yakoon |
 | `apps` | Platform tools, including `yak` |
-| `pack-system` | Foundational system capabilities |
-| `pack-ident` | Identity and authorization capabilities |
-| `pack-crm` | CRM capabilities |
-| `pack-luma` | Spatial memory capabilities |
-| `pack-labs` | Experiments |
+| `caps-system` | Foundational system capabilities |
+| `caps-ident` | Identity and authorization capabilities |
+| `caps-contacts` | CRM capabilities |
+| `caps-worlds` | Spatial memory capabilities |
+| `caps-labs` | Experiments |
 | `launcher` | The bootstrap — `pip install yakoon` |
-| `dists` | Where built packs are distributed from |
 
 ## Status
 
-Yakoon is under active development. The platform runs, packs install and
-assemble into environments, and their capabilities are available through
-a shared command model.
+Yakoon is under active development. The platform runs, components install
+and assemble into environments, and their capabilities are available
+through a shared command model.
 
-> Yakoon provides infrastructure. Packs bring executable capabilities.
+> Yakoon provides infrastructure. Caps bring executable capabilities.
 > Humans, software and AI can use them.
