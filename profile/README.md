@@ -95,7 +95,7 @@ Each repository describes itself. From top to bottom:
 
 | Repository | What it is |
 |---|---|
-| `developer` | The entry point — a ready-to-run Yakoon workspace |
+| `developer` | Development workspace for working on Yakoon itself |
 | `runtime` | The runtime and the platform model |
 | `sdk` | Build components against Yakoon |
 | `apps` | Platform tools, including `yak` |
