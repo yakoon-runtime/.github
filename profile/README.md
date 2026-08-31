@@ -14,6 +14,12 @@ scheduling, resolution and lifecycle.
 distribution, through discovery and installation, into an assembled
 environment — as a running capability.
 
+## Get started
+
+Install Yakoon and run your first environment:
+
+**[Getting Started →](https://github.com/yakoon-runtime/runtime/blob/main/docs/getting-started.md)**
+
 ## The model
 
 ```text
